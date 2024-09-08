@@ -1,4 +1,4 @@
-const apiKey = "e8e7b40ca343445986692837240809"; // Your API key
+const apiKey = "e8e7b40ca343445986692837240809"; 
 const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
 const baseUrl = 'http://api.weatherapi.com/v1/current.json?'
 

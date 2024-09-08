@@ -126,6 +126,8 @@ h2 {
 }
 
 /* Mobile responsiveness */
+
+
 @media screen and (max-width: 600px) {
     .container {
         width: 95%;

@@ -14,8 +14,8 @@ async function getWeather(city) {
     console.log(data);
 
 
-    document.querySelector('.city').innerHTML = data.location.name;
-    document.querySelector('.temp').innerHTML = data.current.temp_c + "°C";
+    document.querySelector('.city').innerHTML = data.location.name + ", " + data.location.region;
+    document.querySelector('.temp').innerHTML = data.current.temp_c + "°C" + " / " + data.current.temp_f + "°F";
     document.querySelector('.humidity').innerHTML = data.current.humidity + "%";
     document.querySelector('.wind').innerHTML = data.current.wind_kph + "km/h";
     weatherIcon.src = data.current.condition.icon;

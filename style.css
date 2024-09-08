@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #252623;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    letter-spacing: 1.5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    color: #fff;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+    width: 80%;
+    background-color: #ebfffc;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search input {
+    background-color: #ebfffc;
+    border: 0;
+    outline: 0;
+    width: 85%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.search input:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8efef;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 50px;
+    width: 50px;
+}
+
+.search button:hover {
+    background-color: #00d1b2;
+}
+
+#search-img {
+    width: 25px;
+    height: 25px;
+}
+
+.weather {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weather-icon {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.temp {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.col {
+    text-align: center;
+    padding: 10px;
+}
+
+.col img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .temp {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .detail {
+        flex-direction: column;
+    }
+
+    .col {
+        padding: 15px 0;
+    }
+}
